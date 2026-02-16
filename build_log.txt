@@ -1,0 +1,44 @@
+Building macOS application...                                   
+lib/domain/models/transaction_filter.dart:6:7: Error: The non-abstract class 'TransactionFilter' is missing implementations for these members:
+ - _$TransactionFilter.accountId
+ - _$TransactionFilter.endDate
+ - _$TransactionFilter.filterType
+ - _$TransactionFilter.maxAmount
+ - _$TransactionFilter.minAmount
+ - _$TransactionFilter.searchQuery
+ - _$TransactionFilter.startDate
+Try to either
+ - provide an implementation,
+ - inherit an implementation from a superclass or mixin,
+ - mark the class as abstract, or
+ - provide a 'noSuchMethod' implementation.
+class TransactionFilter with _$TransactionFilter {
+      ^^^^^^^^^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:63: Context: '_$TransactionFilter.accountId' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                                              ^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:113: Context: '_$TransactionFilter.endDate' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                                                                          ^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:39: Context: '_$TransactionFilter.filterType' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                      ^^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:157: Context: '_$TransactionFilter.maxAmount' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                                                                          ^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:134: Context: '_$TransactionFilter.minAmount' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                                                                          ^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:14: Context: '_$TransactionFilter.searchQuery' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+             ^^^^^^^^^^^
+lib/domain/models/transaction_filter.freezed.dart:17:88: Context: '_$TransactionFilter.startDate' is defined here.
+ String? get searchQuery; String? get filterType; String? get accountId; DateTime? get startDate; DateTime? get endDate; double? get minAmount; double? get maxAmount;
+                                                                                       ^^^^^^^^^
+Target kernel_snapshot_program failed: Exception
+Failed to package /Users/petermendis/Documents/anti-gravity/livespotty/financesistent.
+Command PhaseScriptExecution failed with a nonzero exit code
+warning: Run script build phase 'Run Script' will be run during every build because it does not specify any outputs. To address this issue, either add output dependencies to the script phase, or configure it to run in every build by unchecking "Based on dependency analysis" in the script phase. (in target 'Flutter Assemble' from project 'Runner')
+** BUILD FAILED **
+
+Build process failed
